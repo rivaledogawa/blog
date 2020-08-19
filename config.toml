@@ -1,0 +1,98 @@
+baseURL = "https://riva.id/"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "Rival.id"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "LoveIt"
+
+[params]
+  # LoveIt theme version
+  version = "0.2.X"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Kategori"
+    url = "/categories/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Label"
+    url = "/tags/"
+    title = ""
+    weight = 3
+    [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "Tentang"
+    url = "/about/"
+    title = ""
+    weight = 4
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+[params.cdn]
+  # CDN data file name, disabled by default
+  # ("jsdelivr.yml")
+  data = "themes/LoveIt/assets/data/cdn/"
+
+[params.search]
+  enable = true
+  # type of search engine ("lunr", "algolia")
+  type = "lunr"
+  # max index length of the chunked content
+  contentLength = 4000
+  # placeholder of the search bar
+  placeholder = ""
+  #  max number of results length
+  maxResultLength = 10
+  #  snippet length of the result
+  snippetLength = 30
+  #  HTML tag name of the highlight part in results
+  highlightTag = "em"
+  #  whether to use the absolute URL based on the baseURL in search index
+  absoluteURL = false
+  [params.search.algolia]
+    index = ""
+    appID = ""
+    searchKey = ""
+
+[params.social]
+  [params.social.twitter]
+    weight = 1
+    id = "@rival.abuhanifah"
+    prefix = "https://twitter.com/"
+    title = "Twitter"
+    class = "fab fa-twitter fa-fw"
+
+    [params.social.facebok]
+    weight = 2
+    id = "@rival.abuhanifah"
+    prefix = "https://twitter.com/"
+    title = "Twitter"
+    class = "fab fa-twitter fa-fw"
